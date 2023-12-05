@@ -39,7 +39,7 @@ setPeople(data.data.data);
 
           <tbody>
             {
-              people.length === 0 ? ('No data found'):
+              people.length === 0 ? ('No data found to display'):
                   people.map((person,index) =>{
                     return <tr key = {index}>
 <td>{person.first_name}</td>
