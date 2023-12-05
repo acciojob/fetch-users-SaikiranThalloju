@@ -24,7 +24,7 @@ setPeople(data.data.data);
         {/* Do not remove the main div */}
         <header className = "nav">
           <h1>Blue Whales</h1>
-          <button onClick={getUsers}>Get Users List</button>
+          <button className="btn" onClick={getUsers}>Get Users List</button>
         </header>
 
         <table>
@@ -39,7 +39,7 @@ setPeople(data.data.data);
 
           <tbody>
             {
-              people.length === 0 ? ('No data found to display'):
+              people.length === 0 ? ('No data found'):
                   people.map((person,index) =>{
                     return <tr key = {index}>
 <td>{person.first_name}</td>
